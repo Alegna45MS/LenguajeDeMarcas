@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Ejercicio selectores 2 </title>
+
+	<style type="text/css">
+		/* Todos los elementos de la pagina */
+		 *{
+			font-family: "Open Sans", Arial, sans-serif;
+			font-size: 14px;
+			line-height: 1.6;
+			color: #494949;
+		}
+
+		/* Todos los parrafos de la pagina */
+		 p{
+			color: #666;
+		}
+
+		/* Todos los elementos h1 de la pagina */
+		 h1{
+			font-weight: bold;
+			font-size: 22px;
+			color: #DD1E64;
+		}
+
+		/*todos los elementos con clase cabecera*/
+		.cabecera{
+			background-color: pink;
+			border: 1px #DD1E64 solid;
+		}
+
+		/*todos los elementos con clase descripcion*/
+		.descripcion{
+			font-size: 16px;
+			text-decoration: underline;
+			font-weight: bold;
+		}
+
+		/*los elementos  <span> de clase especial que esten dentro de un <h1>*/
+
+		h1 span.especial
+		{
+			font-weight: bold;
+			font-size: 20px;
+			color: yellowgreen;
+		}
+
+
+		/*las imagenes que esten en un elemento con id destacado*/
+		#destacado{
+			margin: 15px;
+			border: 2px dashed #494949;
+		}
+
+
+		/*el elemento con id anuncio*/
+		#anuncio{
+
+			width: 80%;
+			margin: 20px;
+			padding: 15px;
+			background-color: #DD1E64;
+
+		}
+
+		/*los parrafos que esten dentro de un elemento con id anuncio*/
+		#anuncio p{
+
+			color: white;
+
+		}
+		/*los link que son hijos de los párrafos que están dentro de los elementos de la clase cabecera */
+		.cabecera p>a{
+			color:blueviolet;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="cabecera">
+		<h1><span class="especial">Título especial</span> de <a href="#">Lorem Ipsum</a></h1>
+		<p class="descripcion">Lorem ipsum dolor sit amet. </p>
+		<p>Quo odio Quis Est consequatur ut voluptatem esse cum molestiae iste sit consectetur nihil eos nostrum
+			aliquid.</p>
+		<p> In quam nihil aut voluptatem consequaturin harum. Vel quia <span> <a href="#">laudantiumQui</a> modi qui Quis</span> odio
+			id dignissimos accusantium ex saepe excepturi qui aliquid ipsa ut quia accusantium.</p>
+		<p> Sed totam nisiQuo excepturi et unde quia aut internos omnis.</p>
+
+	</div>
+
+	<div id="anuncio">
+		<p>Lorem ipsum dolor sit amet. Sit officiis nulla est exercitationem impedit ad voluptas blanditiis aut laborum
+			mollitia eos maxime excepturi est mollitia omnis! Aut nemo voluptatibus id voluptatem iste non vero maxime
+			At quia sunt eos beatae officia 33 itaque quis. </p>
+		<p>Aut libero voluptas et dolores officiis non tempore adipisci et assumenda obcaecati ut quia vero! Et expedita
+			illo ab placeat quasi et molestias iste ut quia aspernatur non ipsam vitae aut quos autem non sint iusto.
+		</p>
+
+	</div>
+
+	<div class="cabecera">
+		<h1><span class="especial">Este es un trozo</span> de texto estándar de Lorem Ipsum</h1>
+		<p class="descripcion">Lorem ipsum dolor sit amet. In quod atqueVel eveniet et sunt numquam et distinctio
+			facilis non quidem blanditiis. Et voluptatem porroHic officiis qui aliquam molestias sed ipsum dignissimos
+			quo tenetur odit sit doloribus doloremque aut enim corporis. Eum sequi error et ratione laudantiumin
+			expedita qui recusandae dolor. A corporis temporibusEt iste et possimus deserunt et ipsum voluptas et
+			doloremque perspiciatis. </p>
+		<p>Sit quos Quis a quidem molestiaeId voluptas eos magni ullam qui veniam culpa. Aut temporibus expedita <a
+				href="#" target="_blank">Ut reprehenderit qui architecto libero et
+				exercitationem ipsa ad laborum officiis</a> est nihil consequatur vel corrupti iure. </p>
+
+		<p>Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de
+			sentencias, para generar texto de que <span class="especial">Lorem Ipsum</span>parezca razonable.</p>
+
+	</div>
+
+	<div id="destacado">
+
+		<img src="busto.jpg" alt="Busto de Cicerón" width="25%" />
+
+	</div>
+
+
+</body>
+
+</html>

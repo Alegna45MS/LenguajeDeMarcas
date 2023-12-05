@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Red Social</title>
+    </head>
+    <style>
+        div{
+            margin: 15px;
+            color: rgb(0, 60, 255);
+        }
+        h1{
+            color: red;
+        }
+    </style>
+    <body>
+        <h1>Registro</h1>
+        <form action="/pagDestinoServidor" method="post">
+    <div>
+        <label for="num">Nombre</label>
+        <input type="text" name="Nombre" id="num" maxlength="10"/>
+    </div>
+    <div>
+        <label for="apell">Apellidos</label>
+        <input type="text" name="Apellido" id="num" maxlength="10"/>
+    </div>
+    <div>
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="em"/>
+    </div>
+    <div>
+        <label for="pass">Password</label>
+        <input type="password" name="Contraseña" id="pass" maxlength="20"/>
+    </div>
+    <div>
+        <label for="dom">Domicilio</label>
+        <input type="text" name="domicilio" id="dom"/>
+    </div>
+    <div>
+        <label for="codp">CP</label>
+        <input type="number" name="CodPostal" id="codp" max="99999" min="10000"/>
+    </div>
+    <div>
+        <label for="tlf">Telefono</label>
+        <input type="tel" name="telefono" id="tlf"/>
+    </div>
+    <div>
+        <label for="fech">Fecha de nacimiento</label>
+        <input type="date" name="fechaNacimiento" id="fech"/>
+    </div>
+    <div>
+        <label for="foto">Subir foto</label>
+        <input type="file" name="subirFoto" id="foto"/>
+    </div>
+    <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </div>
+        </form>
+    </body>
+</html>
