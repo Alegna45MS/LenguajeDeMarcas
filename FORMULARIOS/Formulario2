@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Buscar empleo</title>
+    </head>
+    <body>
+        <h1>Buscar empleo</h1>
+        <form action="/pagDestinoServidor" method="post"></form>
+    </body>
+    <div>
+        <label for="num">Nombre</label>
+        <input type="text" name="Nombre" id="num" maxlength="10"/>
+    </div>
+    <div>
+        <label for="apell">Apellidos</label>
+        <input type="text" name="Apellido" id="num" maxlength="10"/>
+    </div>
+    <div>
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="em"/>
+    </div>
+    <div>
+        <label for="pass">Password</label>
+        <input type="password" name="Contraseña" id="pass" maxlength="20"/>
+    </div>
+    <div>
+        <label for="foto">Subir foto</label>
+        <input type="file" name="subirFoto" id="foto"/>
+    </div>
+    <fieldset>
+        <legend>Trabajo a jornada parcial o completa</legend>
+        <ul>
+            <li>
+                <label for="parcial">Parcial</label>
+                <input type="radio" id="parcial" name="parcial" value="parcial"checked>
+            </li>
+            <li>
+                <label for="completa">Completa</label>
+                <input type="radio" id="completa" name="completa" value="completa"checked>
+            </li>
+        </ul>
+        <legend>Trabajo en jornada intensiva o partida</legend>
+        <ul>
+            <li>
+                <label for="inten">Intensiva</label>
+                <input type="radio" id="inten" name="intensiva" value="intensiva"checked>
+            </li>
+            <li>
+                <label for="part">Partida</label>
+                <input type="radio" id="part" name="partida" value="partida"checked>
+            </li>
+        </ul>
+    </fieldset>
+    <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </div>
+        </form>
+</html>
