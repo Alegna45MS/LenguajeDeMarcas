@@ -51,6 +51,30 @@
             </li>
         </ul>
     </fieldset>
+    <fieldset>
+        <legend>¿Tiene carnet de manipulador de alimentos?</legend>
+        <ul>
+            <li>
+                <label for="Si">Si</label>
+                <input type="radio" id="Si" name="Si" value="Si"checked>
+            </li>
+            <li>
+                <label for="No">No<label>
+                <input type="radio" id="No" name="No" value="No"checked>
+            </li>
+        </ul>
+        <legend>¿Tiene carnet de conducir?</legend>
+        <ul>
+            <label for="Si">Si</label>
+                <input type="radio" id="Si" name="Si" value="Si"checked>
+            </li>
+            <li>
+                <label for="No">No<label>
+                <input type="radio" id="No" name="No" value="No"checked>
+            </li>
+        </ul>
+
+    </fieldset>
     <div>
         <button type="submit">Enviar</button>
         <button type="reset">Cancelar</button>
