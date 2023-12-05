@@ -66,11 +66,11 @@
         <legend>¿Tiene carnet de conducir?</legend>
         <ul>
             <label for="Si">Si</label>
-                <input type="radio" id="Si" name="Si" value="Si"checked>
+                <input type="radio" id="Si" name="Si" value="Sis"checked>
             </li>
             <li>
                 <label for="No">No<label>
-                <input type="radio" id="No" name="No" value="No"checked>
+                <input type="radio" id="No" name="No" value="Nos"checked>
             </li>
         </ul>
 
