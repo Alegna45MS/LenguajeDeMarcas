@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ejercicio 4</title>
+    </head>
+    <style>
+        div{
+            margin: 30px;
+            font-size: 30px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        legend,button,li,input,select{
+            font-size: 30px;
+        }
+    </style>
+    <body>
+        <h1>Formulario de contacto</h1>
+        <form action="/pagDestinoServidor" method="post">
+            <div>
+                <label for="nom">Nombre</label>
+                <input type="text" name="Nombre" id="nom" maxlength="150" placeholder="Escribe tu Nombre"/>
+            </div>
+            <div>
+                <label for="ed">Introduce tu edad</label>
+                <input type="number" name="Edad" id="ed" min="18"/>
+            </div>
+            <div>
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="em" placeholder="correo@empresa.com"/>
+            </div>
+            <div>
+                <label for="asun">Asunto</label>
+                <select name="asunto" id="asu">
+                <option>Pedir presupuesto</option>
+                <option>Solicitar cita previa</option>
+                <option>Otros</option>
+                </select>
+            </div>
+            <div>
+                <legend>¿Como nos ha conocido?</legend>
+                    <input type="checkbox" id="amigo" name="amigo">
+                    <label for="amigo">Un amigo</label> 
+                    <input type="checkbox" id="web" name="BuscadorWeb">
+                    <label for="web">En un buscador Web</label>
+                    <input type="checkbox" id="publ" name="publicidad">
+                    <label for="publ">Publicidad</label>
+                    <input type="checkbox" id="otr" name="Otros">
+                    <label for="otr">Otros</label>
+            </div>
+            <div id="mensaje">
+                <label for="mens">Escribe tu mensaje</label>
+                <br>
+                <textarea name="mensaje" id="mens"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="amigo" name="amigo">
+                <label for="politica">He leido y acepto el <a href=""> aviso legal y la politica de privacidad</a></label> 
+            </div>
+            <button type="submit">Enviar Formulario</button>
+        </form>
+    </body>
+</html>
