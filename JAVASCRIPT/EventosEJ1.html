@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ <html> 
+<head>
+    <link rel="stylesheet" href="EventosEJ1_Style.css"/>
+    <script>
+        function cambiarTexto(){
+            var texto=document.getElementById("caja");
+            var newtext=document.getElementById("texto");
+            texto.innerHTML=newtext.innerHTML;
+            
+        }
+        function cambiarFondo(){
+            var elem = document.getElementById("caja");
+            var nuevofondo=document.getElementById("cambiarFondo")
+            var newColor=nuevofondo.innerHTML;
+            elem.innerHTML=newColor;
+            
+        }
+        function cambiarBorde(){
+
+        }
+        function cambiarColorTexto(){
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1>EMPEZANDO CON JAVASCRIPT</h1>
+    <div id="caja"><strong><p>Texto del div</p></strong></div>
+    <hr>
+    <div id="IntrodTexto">
+        <label for="texto"><strong>Introduce un texto aquí</strong></label>
+        <input type="text" id="texto" maxlength="20">
+    </div>
+    <hr>
+    <div id="opciones">
+    <label for="cambiarFondo"><strong>Selecciona color de fondo</strong></label>
+    <input type="color" id="cambiarFondo">
+
+    <label for="cambiarBorde"><strong>Selecciona color del borde</strong></label>
+    <input type="color" id="cambiarBorde">
+
+    <label for="cambiarColorTexto"><strong>Selecciona color del texto</strong></label>
+    <input type="color" id="cambiarColorTexto">
+    </div>
+    <hr>
+    <button id="btnCambiarTexto" onclick="cambiarTexto()"><strong>Cambiar texto</strong></button>
+    <button id="btnCambiarFondo" onclick="CambiarFondo()"><strong>Cambiar color fondo</strong></button>
+    <button id="btnCambiarBorde" onclick="cambiarBorde()"><strong>Cambiar color borde</strong></button>
+    <button id="btncambiarTextoColor" onclick="cambiarColorTexto()"><strong>Cambiar color texto</strong></button>
+
+
+</body> 
+</html>

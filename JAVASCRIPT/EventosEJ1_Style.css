@@ -1,0 +1,27 @@
+body{
+    font-size: 30px;
+}
+h1{
+    text-align: center;
+}
+#caja{
+    border: 5px solid;
+
+}
+#caja{
+    padding-left: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+#IntrodTexto{
+    margin-top:20px;
+    text-align: center;
+}
+button{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(132, 200, 230);
+    font-size: 15px;
+
+    
+}
