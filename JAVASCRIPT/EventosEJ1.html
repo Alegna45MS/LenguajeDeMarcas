@@ -9,11 +9,6 @@
             text.innerHTML=textoActual;   
         }
         function cambiarFondo(){
-            /*var elem = document.getElementById("caja");
-            var nuevofondo=document.getElementById("cambiarFondo")
-            var newColor=nuevofondo.getAttribute("value");
-            elem.innerHTML=newColor;*/
-
             var nuevoColor=document.getElementById("cambiarFondo").value;
             document.getElementById("caja").style.backgroundColor=nuevoColor;
             
@@ -23,8 +18,9 @@
             document.getElementById("caja").style.borderColor=nuevoborde;
         }
         function cambiarColorTexto(){
-            var nuevoColorText=document.getElementById("cambiarColorText").value;
-            document.getElementById("caja").style.color=nuevoColorText;
+            var Colortexto=document.getElementById("caja");
+            var almacen=document.getElementById("cambiarColorText")
+            Colortexto.style.color=almacen.value;
         }
 
     </script>
@@ -74,7 +70,7 @@ button{
     <label for="cambiarBorde"><strong>Selecciona color del borde</strong></label>
     <input type="color" id="cambiarBorde">
 
-    <label for="cambiarColorTexto"><strong>Selecciona color del texto</strong></label>
+    <label for="cambiarColorText"><strong>Selecciona color del texto</strong></label>
     <input type="color" id="cambiarColorText">
     </div>
     <hr>
