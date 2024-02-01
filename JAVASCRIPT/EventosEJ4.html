@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <script>
+            function sumar() {
+            var numero1 = parseFloat(document.getElementById("num1").value);
+            var numero2 = parseFloat(document.getElementById("num2").value);
+            var resultado = numero1 + numero2;
+            document.getElementById("resultado").value = resultado;
+            }
+            function restar() {
+            var numero1 = parseFloat(document.getElementById("num1").value);
+            var numero2 = parseFloat(document.getElementById("num2").value);
+            var resultado = numero1 - numero2;
+            document.getElementById("resultado").value = resultado;
+        }
+
+        function multiplicar() {
+            var numero1 = parseFloat(document.getElementById("num1").value);
+            var numero2 = parseFloat(document.getElementById("num2").value);
+            var resultado = numero1 * numero2;
+            document.getElementById("resultado").value = resultado;
+        }
+
+        function dividir() {
+            var numero1 = parseFloat(document.getElementById("num1").value);
+            var numero2 = parseFloat(document.getElementById("num2").value);
+            if (numero2 !== 0) {
+                var resultado = numero1 / numero2;
+                document.getElementById("resultado").value = resultado;
+            } else {
+                alert("No se puede dividir por cero.");
+            }
+        }
+        function limpiar(){
+            var numero1 =document.getElementById("num1");
+            var numero2 =document.getElementById("num2");
+            var resultado=document.getElementById("resultado");
+            numero1.value=" ";
+            numero2.value=" ";
+            resultado.value=" ";
+        }
+        </script>
+    </head>
+    <style>
+        *{
+            font-size: 30px;
+            margin: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            background-color: green;
+            text-align: center;
+            color: white;
+        }
+        #result{
+            border: 5px solid;
+            padding-left:800px; ;
+            background-color: lime;
+        }
+    </style>
+    <body>
+        <h1>OPERADORES</h1>
+        <label for="num1">Numero 1</label>
+        <input type="text" id="num1">
+
+        <label for="num">Número 2:</label>
+        <input type="text" id="num2">
+        
+        <button onclick="sumar()">Sumar</button>
+        <button onclick="restar()">Restar</button>
+        <button onclick="multiplicar()">Multiplicar</button>
+        <button onclick="dividir()">Dividir</button>
+        <button onclick="limpiar()">Limpiar</button>
+        <br>
+        <div id="result">
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" disabled>
+        </div>
+        
+    </body>
+</html>

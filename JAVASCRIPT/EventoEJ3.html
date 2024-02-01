@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <script>
+            function capturarValores(){
+                var valores="TEXTO:"+cajatexto()+"\n"+"NUMERO:"+cajanum()+"\n"+"PASSWORD:"+cajapass()+"\n"+"FECHA:"+cajafecha()+"\n"+"HORA:"+cajahora()+"\n"+"RADIO:"+cajaradio()+"\n"+"CHECKBOX:"+cajacheck()+"\n"+"SELECT:"+cajaoption();
+                alert(valores)
+            }
+            function cajatexto(){
+                var texto=document.getElementById("cajaText").value
+                return texto
+            }
+            function cajanum(){
+                var numero=document.getElementById("cajaNum").value
+                return numero
+            }
+            function cajapass(){
+                var password=document.getElementById("cajaPass").value
+                return password
+            }
+            function cajafecha(){
+                var fecha=document.getElementById("cajaFecha").value
+                return fecha
+            }
+            function cajahora(){
+                var hora=document.getElementById("cajaHora").value
+                return hora
+            }
+            function cajaradio(){
+                var radio=document.getElementById("cajaRadio").checked
+                return radio
+            }
+            function cajacheck(){
+                var check=document.getElementById("cajaCheck").checked
+                return check
+            }
+            function cajaoption(){
+                var opcion=document.getElementById("cajaCheck2").value
+                return opcion
+            }
+        </script>
+    </head>
+    <style>
+        *{
+            font-size: 30px;
+            margin: 5px;
+        }
+        input{
+            background-color: orange;
+        }
+    </style>
+    <body>
+        <h1>VALOR EN CONTROLES</h1>
+        <div>
+        <label for="cajaText">CajaTexto</label>
+        <input type="text" id="cajaText">
+        </div>
+        <div>
+        <label for="cajaNum">Caja numero</label>
+        <input type="number" id="cajaNum">
+        </div>
+        <div>
+        <label for="cajaPass">Caja password</label>
+        <input type="password" id="cajaPass">
+        </div>
+        <div>
+        <label for="cajaFecha">Caja fecha</label>
+        <input type="date" id="cajaFecha">
+        </div>
+        <div>
+        <label for="cajaHora">Caja hora</label>
+        <input type="time" id="cajaHora">
+        </div>
+        <div>
+        <label for="cajaRadio">Caja radio</label>
+        <input type="radio" id="cajaRadio">
+        </div>
+        <div>
+        <label for="cajaCheck">Caja check</label>
+        <input type="checkbox" id="cajaCheck">
+        </div>
+        <div>
+        <label for="cajaCheck2">Caja check</label>
+        <select id="cajaCheck2">
+            <option>Opcion 3</option>
+            <option>Opcion 2</option>
+            <option>Opcion 1</option>
+        </select>
+        </div>
+        <div>
+        <button onclick="capturarValores()">Capturar valores</button>
+        </div>
+    </body>
+</html>
