@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Piedra, papel y tijeras</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="funciones.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Piedra Papel o Tijeras</h1>
+    </header>
+    <div class="marcador">
+        <span>Usuario</span>  <span>Ordenador</span>
+      </div>
+    <div class="puntos">
+        <span id="puntos_Usu">0</span>:<span id="puntos_Ord">0</span>
+    </div>
+    <div class="resultado">
+        <p id="p_resultado"></p>
+    </div>
+    <div class="opciones">
+        <div class="opcionOrd" id="jugada_ordenador"><img src="tijeras.png" id="img_ordenador" /></div>
+    </div>
+    <div class="opciones">
+
+        <div class="opcion"  id="r"><img src="piedra.png" onclick="jugar('r')"/></div>
+        <div class="opcion"  id="p"><img src="papel.png" onclick="jugar('p')"/></div>
+        <div class="opcion"  id="t"><img src="tijeras.png" onclick="jugar('t')"/></div>
+    </div>
+    <p id="elige">Te toca sacar</p>
+</body>
+
+</html>
