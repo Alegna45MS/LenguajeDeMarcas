@@ -1,0 +1,92 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+html{
+    background-color: black;
+}
+
+#cabecera{
+    border-bottom: 1px;
+    color: #c00c00;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+}
+#contenido,
+#titulo,
+#principal,
+#cabecera{
+    background-color: white;
+}
+#principal{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right:50px;
+}
+#pie{
+    margin-top: 10px;
+    margin-bottom:10px;
+    border: white;
+    border-width: 2px;
+    color: white;
+    border-style: solid;
+}
+#cabecera img{
+    padding-left: 80px;
+    padding-top:50px;
+}
+#titulo p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 15px;
+    text-transform: uppercase;
+    margin-bottom:0px;
+
+}
+#principal p{
+    padding:15px;
+}
+#principal p:nth-child(even){
+    background-color: #dcbebe;
+}
+#principal p:nth-child(odd){
+    background-color: #fcf1f1;
+}
+#principal img{
+    width: 800px;
+}
+h1{
+    margin:5px;
+    padding-left: 10px;
+    font-size:2.5px
+}
+li{
+    border-style: solid;
+    border-bottom:#c00c00;
+    border-top: #c00c00;
+    padding: 15px;
+}
+#pie a,p{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#pie a{
+    padding-top:15px;
+}
+#pie a:hover{
+    color:#dcbebe;
+}
+strong{
+    color:#c00c00;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+

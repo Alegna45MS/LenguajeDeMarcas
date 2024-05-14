@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function generarNumeros() {
+            var numeroAle = Math.floor((Math.random() * 21) + 1)
+            let listaNum = "";
+            var contPar = 0
+            var contImpar = 0
+
+            var numerosGenerados = document.getElementById("numerosGenerados")
+            numerosGenerados.innerHtml = "Numero generado:" + numeroAle
+            for (let i = 1; i <= numeroAle; i++) {
+                listaNum += i + "<br/>";
+                if (i % 2 == 0) {
+                    contPar++
+                } else {
+                    contImpar++
+                }
+            }
+            numerosGenerados.innerHTML += listaNum
+            var total = document.getElementById("totales")
+            var texto = "Se han generado" + contPar + "numeros pares y " + contImpar + "numeros impares"
+            total.innerHTML=texto
+        }
+    </script>
+    <style>
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        input {
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        button {
+            height: 30px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+        }
+
+        div {
+            margin: 5px;
+            padding: 20px;
+            width: 50%;
+        }
+
+        h1 {
+            margin: 5px;
+        }
+
+        #numerosGenerados {
+            border: 1px black solid;
+        }
+
+        #totales {
+            border: 1px solid rgb(193, 38, 138);
+            color: rgb(193, 38, 138);
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Números aleatorios</h1>
+    <div>
+        <div id="numerosGenerados">
+            Aquí irán los números generados
+        </div>
+        <div id="totales">Aquí irán los totales</div>
+        <button onclick="generarNumeros()">Generar</button>
+    </div>
+</body>
+
+</html>

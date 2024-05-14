@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JUEGO2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="miCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+</head>
+
+<body class="lugrasimo-regular">
+    <header id="cab">
+        <h1 style="font-size: 45px;">Lightest Dungeon</h1>
+    </header>
+    <ul class="nav nav-tabs nav-fill " style="background-color: #daf6f7;">
+        <li class="nav-item">
+            <a style=" background-color: #8f9cc9; color:#554a70; border-bottom: #8f9cc9 solid 5px;"
+                class="nav-link active" style="color: #554a70" aria-disabled="true">Página
+                principal</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: #554a70" href="#">Juego</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: #554a70;" href="#">Baraja</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: #554a70;" href="#">Contactanos</a>
+        </li>
+    </ul>
+    <div class="row">
+        <div class="col-2">
+            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link color" href="#item-2">Personajes y clases</a>
+                    <a class="nav-link color" href="#item-3">Juego</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ms-3 my-1 color" href="#item-3-1">Stats</a>
+                        <a class="nav-link ms-3 my-1 color" href="#item-3-2">Instrucciones</a>
+                    </nav>
+                </nav>
+            </nav>
+        </div>
+        <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                class="scrollspy-example-2" tabindex="0">
+                <div id="item-1">
+                    <div id="historia">
+                        <h2>HISTORIA</h2>
+                        <p>En un mundo donde humanos y criaturas fantásticas coexistían pacíficamente, la armonía se vio
+                            amenazada
+                            cuando un
+                            ser maligno, conocido como el Señor Oscuro, sembró la discordia entre ambos grupos. Con su
+                            habilidad
+                            para
+                            manipular mentes y crear ilusiones, convenció a algunos humanos de que las criaturas
+                            fantásticas eran
+                            una
+                            amenaza
+                            para su dominio.
+                            <br>
+                            <br>
+                            La paranoia y el miedo se extendieron rápidamente entre los humanos, mientras que las
+                            criaturas
+                            fantásticas,
+                            desconcertadas por el repentino cambio en la actitud de sus antiguos aliados, se vieron
+                            obligadas a
+                            defenderse. Lo
+                            que comenzó como pequeños enfrentamientos pronto se convirtió en una guerra a gran escala.
+                            <br>
+                            <br>
+                            Entre los humanos y las criaturas fantásticas que se resistían al engaño del Señor Oscuro,
+                            surgieron
+                            valientes
+                            héroes que luchaban por la paz y la reconciliación.Tendrán que pasar por lugares peligrosos
+                            y combatir
+                            contra
+                            monstruos esbirros del señor oscuro y llegar hasta él para poder vencerlo y así librar al
+                            mundo de maldad.
+                        </p>
+                    </div>
+                    <div id="carta">
+                        <p>Querido heroe:
+                            <br>
+                            <br>
+                            Espero que esta carta te encuentre en buen estado de salud y con ánimo para enfrentar los
+                            desafíos que se
+                            avecinan. Me dirijo a ti con un corazón pesado y una mente llena de preocupaciones, pues
+                            nuestro pacífico pueblo
+                            está siendo amenazado por un mal antiguo que ha despertado de su letargo.
+                            <br>
+                            <br>
+                            Un ser malvado, cuyo nombre se susurra con temor en los rincones más oscuros de nuestras
+                            tierras, ha comenzado una
+                            campaña de conquista que se extiende por todo el reino. Sus ejércitos de criaturas
+                            monstruosas y seguidores
+                            fanáticos avanzan sin piedad, sembrando caos y destrucción a su paso.
+                            <br>
+                            <br>
+                            He escuchado historias de tus valientes hazañas y de tu coraje inquebrantable en la lucha
+                            contra los monstruos.
+                            Le rogamos que nos ayude,toda nuestra gente está muriendo y no sabemos que hacer.
+                            <br>
+                            <br>
+                            Te esperamos con esperanza en nuestros corazones y una fe inquebrantable en que, con tu
+                            ayuda, podremos poner fin
+                            a esta oscuridad que nos consume.
+                            <br>
+                            <br>
+                            Que los dioses te guíen y te protejan en tu viaje hacia nosotros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="item-2">
+                <h4>PERSONAJES</h4>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button color2 " style="font-size: 20px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                aria-controls="collapseOne">
+                                Shyv,la humana pícara
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Suelen ser una de las razas más comunes y versátiles. Por lo general, se los describe
+                                como una especie adaptable, valiente y diversa, capaz de grandes hazañas y de
+                                enfrentarse a desafíos épicos
+                                <br>
+                                Los pícaros son personajes especializados en el sigilo, la astucia y el combate furtivo.
+                                Suelen ser
+                                ágiles y expertos en el arte del engaño, el robo y la infiltración. Son maestros en
+                                el uso de dagas,
+                                arcos, trampas y otros artilugios para superar obstáculos y enfrentarse a enemigos.
+                                A menudo, se los
+                                retrata como individuos independientes y pragmáticos, dispuestos a hacer lo que sea
+                                necesario para
+                                sobrevivir o alcanzar sus objetivos, incluso si eso implica romper las reglas o
+                                recurrir a la
+                                persuasión.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed color2" style="font-size: 20px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Elleen,la bruja
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Las brujas son generalmente mujeres dotadas de habilidades mágicas, que pueden ser
+                                tanto benevolentes como malévolas. Suelen poseer conocimientos sobre hierbas,
+                                pociones,hechizos y rituales mágicos.
+                                A menudo, se las asocia con la naturaleza y la conexión con lo sobrenatural, y suelen
+                                ser
+                                representadas como figuras enigmáticas y poderosas que manipulan las fuerzas místicas
+                                para lograr sus objetivos.
+                                <br>
+                                Los tarotistas son personajes que poseen habilidades sobrenaturales para interpretar las
+                                cartas del tarot con el fin de obtener información sobre el pasado, el presente y el
+                                futuro. Estos personajes suelen ser retratados como misteriosos y enigmáticos, con una
+                                conexión especial con el mundo espiritual o mágico.Pueden poseer poderes de
+                                clarividencia, telepatía o manipulación de la energía espiritual
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed color2" style="font-size: 20px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Colin,el vampiro hemomante
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Los vampiros son criaturas legendarias que se alimentan de la sangre de los seres vivos
+                                para
+                                mantenerse inmortales y poderosos. Se los representa comúnmente como seres pálidos, con
+                                colmillos afilados y una aversión a la luz solar,suelen ser retratados como seres
+                                seductores y misteriosos, capaces de controlar la mente de sus víctimas y transformar a
+                                otros en vampiros mediante la mordedura.pueden poseer una variedad de habilidades
+                                sobrenaturales, como fuerza sobrehumana, velocidad aumentada, regeneración rápida y
+                                capacidad para transformarse en murciélagos u otras criaturas.
+                                <br>
+                                El término "hemomante" proviene de la palabra "hemo", que significa sangre, y "mante",
+                                que se refiere a un practicante o manipulador.Son a menudo retratados como usuarios de
+                                una forma de magia oscura o prohibida, ya que el control sobre la sangre puede ser
+                                considerado peligroso y perturbador.Su magia puede involucrar la capacidad de causar
+                                daño a través de la manipulación de la sangre de otros, controlar mentalmente a sus
+                                enemigos mediante la influencia sobre su circulación sanguínea, o incluso sanar heridas
+                                propias o ajenas acelerando la coagulación o promoviendo la regeneración celular.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed color2" style="font-size: 20px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                Luthien,la elfa cleriga
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Son seres humanoides mágicos y etéreos, conocidos por su gracia, belleza y
+                                longevidad. Suelen ser representados como seres inmortales o que viven durante cientos o
+                                miles de años, y poseen habilidades superiores en el arte de la magia, la arquería, la
+                                música y la artesanía.se caracterizan por su conexión con la naturaleza y a menudo son
+                                representados como protectores de los bosques y guardianes de la vida silvestre. Son
+                                expertos en el uso de la magia relacionada con la naturaleza y pueden comunicarse con
+                                animales y espíritus.son retratados como una raza noble y sabia, aunque a veces también
+                                pueden ser arrogantes o distantes hacia otras razas.
+                                <br>
+                                Los clérigos son personajes que canalizan poderes divinos para realizar milagros, curar
+                                heridas y luchar contra fuerzas malignas. Suelen estar dedicados a servir a una deidad o
+                                a una causa religiosa y actúan como intermediarios entre los dioses y los mortales.Por
+                                lo general, tienen acceso a hechizos de curación, protección y purificacion.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed color2" style="font-size: 20px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive">
+                                Aurora,la hada
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Las hadas son criaturas mágicas y etéreas que suelen estar asociadas con la naturaleza,
+                                la
+                                belleza y la magia. Se las describe comúnmente como seres diminutos, alados y con
+                                apariencia humana o similar a la de insectos. Las hadas son conocidas por su capacidad
+                                para volar y por poseer poderes mágicos, como lanzar hechizos, conceder deseos o
+                                manipular la naturaleza.Son seres juguetones y traviesos, pero también pueden ser sabios
+                                y benevolentes, ofreciendo consejos y ayuda a aquellos que son dignos de su favor.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed color2" style="font-size: 20px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                aria-controls="collapseSix">
+                                Pepe,el minotauro ciclope
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                En el mundo de la fantasía, los minotauros son criaturas mitad humanas y mitad toro,
+                                conocidas por su fuerza, ferocidad y astucia. Se los representa comúnmente como seres
+                                enormes, con el cuerpo de un toro y la parte superior del cuerpo humano, incluyendo
+                                cabeza, brazos y torso.
+                                Suelen ser retratados como criaturas salvajes y brutales, a menudo asociadas con
+                                laberintos y lugares oscuros.Son conocidos por su habilidad en el combate cuerpo a
+                                cuerpo y su instinto de caza, así como por su resistencia física y su naturaleza
+                                indómita.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed color2" style="font-size: 20px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                                aria-controls="collapseSeven">
+                                Maki,la semi-elfa arquera
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Son descendientes de la unión entre humanos y elfos. Combinan rasgos de ambas razas,
+                                heredando la gracia y la longevidad de los elfos, así como la versatilidad y la
+                                adaptabilidad de los humanos. Suelen ser retratados como individuos que no encajan
+                                completamente en ninguna de las dos culturas, lo que a menudo los hace sentirse
+                                solitarios o marginados. Sin embargo, también pueden aprovechar lo mejor de ambos
+                                mundos, siendo capaces de relacionarse tanto con humanos como con elfos, y mostrando una
+                                diversidad de habilidades y perspectivas que los hacen únicos.suelen tener algunas de
+                                las capacidades mágicas y sensoriales de los elfos, junto con la resistencia y la
+                                adaptabilidad de los humanos.
+                                <br>
+                                Los arqueros son personajes especializados en el uso del arco y la flecha como sus armas
+                                principales.Estos personajes suelen ser ágiles, precisos y letales a distancia, capaces
+                                de atacar a sus enemigos con rapidez y precisión desde lejos.Suelen destacarse por su
+                                destreza física, su agudeza mental y su habilidad para la puntería.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed color2" style="font-size: 20px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false"
+                                aria-controls="collapseEight">
+                                Xar'vok,el mago hombre lagarto
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Los hombres lagartos, también conocidos como lagartos, son una raza ficticia común en
+                                muchos mundos de fantasía y juegos de rol. Se los representa como humanoides con
+                                características reptilianas, como escamas, colas largas y ojos de serpiente.Son
+                                conocidos por su ferocidad en combate y su habilidad para cazar y rastrear en su entorno
+                                natural.Su naturaleza reptiliana los hace resistentes a condiciones extremas y pueden
+                                tener habilidades especiales relacionadas con la regeneración o el camuflaje.
+                                <br>
+                                Los magos son personajes dotados de habilidades sobrenaturales que les permiten
+                                controlar y manipular la energía mágica para realizar hechizos, conjuros y otras proezas
+                                místicas.Pueden tener una amplia gama de poderes, que van desde lanzar hechizos
+                                elementales como bolas de fuego o rayos de hielo, hasta manipular la realidad misma con
+                                ilusiones, transformaciones y teletransportación. Algunos magos también pueden poseer
+                                habilidades de adivinación, control mental o curación.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="item-3">
+                <h4>JUEGO</h4>
+                <p>Lightest Dungeon es un juego de fantaisa tipo RPG (Role-Playing Game) en el que escoges a tus
+                    personajes que tienen sus propias razas y clases con sus estadisticas y realizas combates por turnos
+                    contra enemigos
+                    usando cartas de habilidades y cada personaje tiene las suyas propias en base a su clase y pueden
+                    realizar efectos como de ataque
+                    ,curar o incluso recuperar maná que te ayuda a usar mas habilidades.Tendras que saber bien cual,como
+                    y cuando utilizarlas para poder ganar.
+                    <br>
+                    <img src="juego.png" class="rounded mx-auto d-block" width="600px">
+                    <br>
+                    Aqui te mostraremos cada parte de lo que te vas a encontrar en la pantalla del juego cuando empieces
+                <ol>
+                    <li><a>Los alidados que escogeras en tu partida antes de empezar el juego</a></li>
+                    <li><a>Las cartas de habilidades de tus personajes</a></li>
+                    <li><a>Cartas de habilidades que podras robar</a></li>
+                    <li><a>Enemigo a los que derrotar</a></li>
+                    <li><a>Pocion que recuperara la vida de tus aliados</a></li>
+                    <li><a>Cantidad de maná que tienes en total</a></li>
+                    <li><a>Boton para pasar al siguiente turno</a></li>
+                </ol>
+                </p>
+            </div>
+            <div id="item-3-1">
+                <h4>STATS</h4>
+                <p>Como cualquier otro juego de rol,cada personaje jugable tienen sus estadisticas destacables que
+                    identifican a cada clase:
+                <ul>
+                    <li><a><span style="color: rgb(12, 153, 12);">Vida</span>:puntos de salud del personaje</a></li>
+                    <li><a><span style="color: aqua">Maná</span>:puntos de magia para utilizar habilidades</a></li>
+                    <li><a><span style="color: rgb(158, 0, 0);">Ataque:</span>:segun el numero,define la cantidad de
+                            daño extra de una habilidad para hacer daño</a></li>
+                    <li><a><span style="color: rgb(0, 111, 191);">Defensa</span>:segun el numero,define la cantidad de
+                            defansa de una habilidad para absorver daño</a></li>
+                </ul>
+                </p>
+                <p>
+                    Segun la clase,algunos de sus atributos pueden ser mas altos que otros.Por ejemplo las clases de
+                    guerrero o pícaro se centran mas en hacer la mayor cantidad de daño posible pero tienen baja defensa
+                    y los clérigos o tanque hacer daño no es su prioridad sino dar beneficios a su equipo y absorver el
+                    daño que reciben.Los atributos que sean 5 o mas,dan un buff positivo a las habilidades
+                    correspondientes mientras que si son menores que 5 dan un buff negativo.Estos son los porcentajes:
+                <table class="table table-sm">
+                    <thead>
+                        <tr class="table-info">
+                            <th scope="col ">Nivel</th>
+                            <th scope="col">Porcentaje</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-danger">
+                            <th>1</th>
+                            <td>-40%</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <th>2</th>
+                            <td>-30%</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <th>3</th>
+                            <td>-20%</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <th>4</th>
+                            <td>-10%</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <th>5</th>
+                            <td>0%</td>
+                        </tr>
+                        <tr class="table-success">
+                            <th>6</th>
+                            <td>+10%</td>
+                        </tr>
+                        <tr class="table-success">
+                            <th>7</th>
+                            <td>+20%</td>
+                        </tr>
+                        <tr class="table-success">
+                            <th>8</th>
+                            <td>+30%</td>
+                        </tr>
+                        <tr class="table-success">
+                            <th>9</th>
+                            <td>+40%</td>
+                        </tr>
+                        <tr class="table-success">
+                            <th>10</th>
+                            <td>+50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </p>
+            </div>
+            <div id="item-3-2">
+                <h5>Item 3-2</h5>
+                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

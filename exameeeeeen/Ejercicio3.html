@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function darVuelta(){
+        let frase=document.getElementById("frase").value
+        if(frase.value.lenght>0){
+        let divFrase=document.getElementById("divFrase")
+        let fraseReves=""
+        fraseReves=girar(frase.value)
+        divFrase.innerHTML=fraseReves
+        divFrase.style.backgroundColor="crimson"
+        frase.value="";
+        }
+        else{
+            divFrase.innerHTML = girar(divFrase.innerHTML)
+        }
+        }
+        function girar(frase){
+            for(let i=frase.lenght-1;i>=0;i--){
+            fraseReves+=frase.value.charAt(i);
+        }
+        return fraseReves
+        }
+    </script>
+    <style>
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        input {
+            height: 25px;
+            border-radius: 5px;
+            display: block;
+            width: 50%;
+            padding: 0px 20px;
+            margin-top: 5px;
+        }
+
+        button {
+            height: 30px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+        }
+
+        div {
+            margin: 5px;
+            padding: 35px;
+            width: 50%;
+        }
+
+        h1 {
+            margin: 5px;
+        }
+
+        #divFrase {
+
+            color: green;
+            font-weight: bold;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Frase invertida</h1>
+    <div>
+        Introduce la frase:
+        <input id="frase">
+        <div id="divFrase"></div>
+        <button onclick="darVuelta()">Dar la vuelta</button>
+    </div>
+</body>
+
+</html>

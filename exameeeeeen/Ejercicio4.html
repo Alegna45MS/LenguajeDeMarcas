@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Validar fecha</title>
+    <script type="text/javascript" src="Ejercicio4.js"></script>
+    <style>
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1em;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        form {
+            width: 600px;
+            margin: auto;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+
+        div {
+            margin: 15px;
+        }
+
+        input[type='text'],
+        select {
+            height: 35px;
+        }
+
+
+
+        #anyo {
+            width: 80px;
+            height: 32px;
+        }
+
+
+
+        #btnComprobar {
+            background-color: green;
+            border-color: green;
+            color: white;
+            border-radius: 10px;
+            height: 35px;
+            margin-left: 5px;
+        }
+
+        #error {
+            color: red;
+            display: none;
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Validar fecha</h1>
+
+    <form>
+
+
+
+        <div>
+            <select id="dia">
+                <option value="-1">Selecciona el día</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            <select id="mes">
+                <option value="-1">Selecciona el mes</option>
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+            <input type="text" id="anyo" placeholder="Año" />
+            <button id="btnComprobar" onclick="return validar()">Comprobar</button>
+        </div>
+
+        <span id="error"></span>
+
+
+    </form>
+
+</body>
+
+</html>

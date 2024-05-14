@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ejercicio1</title>
+        <style>
+            form{
+                width: 600px;
+                margin: auto;
+            }
+            h1{
+                text-align: center;
+            }
+            button{
+                position: relative;
+                left: 300px;
+            }
+            #enviar{
+                background-color: green;
+                
+            }
+            #cancelar{
+                background-color: red;
+            }
+        </style>
+    </head>
+<body>
+    <h1>ENCUESTA DE VACACIONES</h1>
+<form action="destino.html" method="post">  
+    <fieldset>
+        <legend>Tus datos</legend>
+        <div>
+            <input type="text" name="Nombre" id="nom" placeholder="Tu Nombre" maxlength="30" required/>
+        </div>
+        <div>
+            <input type="text" name="Direccion" id="dir" placeholder="Tu Direccion" maxlength="100" required/>
+        </div>
+        <div>
+            <input type="tlf" name="telefono" id="tlf" placeholder="Tu telefono" pattern="[6,7,9]{1} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required/>
+        </div>
+        <div>
+            <input type="number" name="edad" id="edad" placeholder="Tu edad" max="99" min="18" required/>
+        </div>
+        <div>
+            <label for="mensaje">¿Alguna sugerencia?</label>
+            <textarea id="mensaje" required cols="75" rows="5"></textarea>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>El destino</legend>
+        <div>
+            <legend>¿Cual seria tu destino preferido de vacaciones?</legend>
+            <input type="radio" id="playa" name="vacaciones">
+            <label for="playa">Playa</label>
+
+            <input type="radio" id="montaña" name="vacaciones" value="SI">
+            <label for="montaña">Montaña</label>
+
+            <input type="radio" id="casa" name="vacaciones">
+            <label for="casa">Mi casa</label>
+        </div>
+    </fieldset>
+    <button id="enviar" type="submit">Enviar</button>
+    <button id="Cancelar" type="reset">Cancelar</button>
+</form>
+    
+</body>
+</html>

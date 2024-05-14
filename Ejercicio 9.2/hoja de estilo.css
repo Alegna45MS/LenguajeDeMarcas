@@ -1,0 +1,125 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1.2em;
+}
+h1{
+    color: rgb(237, 44, 205);
+    text-transform: uppercase; /*Pasar a mayuscula*/
+    border-style:solid;
+    border-width: 0.3cm;
+    border-color: black;
+    text-align: center; /*Poner el texto en el centro*/
+    padding-top:1cm;
+    padding-bottom:1cm;
+    font-size:2em
+    /* padding:15px 0px 15px 0px*/
+}
+.Voltaire p{
+    /* border-top:double 30px rgb(11,76,11)*/
+    border-top-style:double;
+    border-top-color: rgb(21, 93, 93);
+    /*border-left:double 30px rgb(11,76,11)*/
+    border-left-style:double;
+    border-left-color: rgb(21, 93, 93);
+    border-width: 0.7cm;
+    padding: 0.3cm;
+}
+.Voltaire span{
+    color: rgb(21, 93, 93);
+    font-style:italic;
+    font-size: 0.8em;
+}
+.Descartes p{
+    border-style: double;
+    border-color:rgb(247, 215, 34);
+    border-top-width: 1cm;
+    border-bottom-width:1cm;
+    border-left-width:0.5cm;
+    border-right-width:0.5cm;
+    padding: 0.3cm;
+}
+.Descartes span{
+    color: rgb(230, 217, 46);
+    font-style:italic;
+    font-size: 0.8em;
+}
+.Oscar p{
+    border-top-style:inset;
+    border-left-style:inset;
+    border-right-style:outset;
+    border-bottom-style:outset;
+    border-width: 0.5cm;
+    border-top-color:rgb(42, 227, 42);
+    border-left-color:rgb(0, 0, 0);
+    border-right-color:rgb(0, 0, 0);
+    border-bottom-color:rgb(67, 67, 195);
+    padding: 0.3cm;
+}
+.Oscar span{
+    color:rgb(67, 67, 195);
+    font-style:italic;
+    font-size: 0.8em;
+}
+.Jean p{
+    border-top-style:dashed;
+    border-top-color: red;
+    border-top-width: 1cm;
+    border-bottom-style: dotted;
+    border-bottom-color: black;
+    border-bottom-width: 1cm;
+    border-left-style:inset;
+    border-left-color:black;
+    border-left-width: 0.5cm;
+    border-right-style:outset;
+    border-right-color:black;
+    border-right-width: 0.5cm;
+    padding:0.4cm;
+
+}
+.Jean span{
+    color:red;
+    font-style:italic;
+    font-size:0.8em;
+}
+.Albert p{
+    border-top-style: dotted;
+    border-top-color: black;
+    border-top-width: 0.5cm;
+    border-bottom-style:dashed;
+    border-bottom-color:black;
+    border-bottom-width: 0.5cm;
+    border-left-style:double;
+    border-left-color:red;
+    border-left-width: 1cm;
+    border-right-style:double;
+    border-right-color:rgb(11, 11, 141);
+    border-right-width: 1cm;
+    padding: 1cm;
+
+}
+.Albert span{
+    color:rgb(11, 11, 141);
+    font-style:italic;
+    font-size:0.8em;
+}
+.Socrates p{
+    border-bottom-style:dashed;
+    border-bottom-color:rgb(73, 73, 172);
+    border-bottom-width:0.5cm;
+    border-top-style:dashed;
+    border-top-color:rgb(73, 73, 172);
+    border-top-width:0.2cm;
+    border-right-style:dashed;
+    border-right-color:rgb(8, 83, 15);
+    border-right-width:0.3cm;
+    border-left-style:outset;
+    border-left-color:rgb(8, 83, 15);
+    border-left-width:0.5cm;
+    padding:0.5cm
+}
+.Socrates span{
+    color:rgb(73, 73, 172);
+    font-style:italic;
+    font-size:0.8em;
+}
+
