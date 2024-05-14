@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function saludar(){
+            alert("Hola Daw")
+        }
+        function recibido(){
+            var caja=document.getElementById("caja1");
+            caja.innerHTML="La primera caja de texto a recibido el foco"
+        }
+        function perdido(){
+            var caja2=document.getElementById("caja2")
+            caja2.innerHTML="La primera caja de texto ha perdido el foco"
+        }
+        function seleccionado(){
+            var caja2=document.getElementById("caja2")
+            caja2.innerHTML="Ha seleccionado la cajita"
+        }
+    </script>
+   
+</head>
+
+<body>
+    <div id="caja1">caja1</div>
+    <div id="caja2">caja2</div>
+    <input type="text"id="texto1" onfocus="recibido()" onblur="perdido()"/>
+    <input type="text"id="texto2" onselect="seleccionado"/>
+    <button id="botonAceptar" onclick="saludar()">saludo</button>
+
+    <script>
+        /*var caja=window.document.getElementById("caja1");
+        textoCaja1 = caja.innerHTML;
+        alert("El texto esta caja es: "+textoCaja1)*/
+        /*anchoVentana=window.innerWidth
+        altoVentana=window.innerHeight
+        posArriba=window.screenY;
+        posIzq=window.screenX;
+        alert("La ventana mide: "+anchoVentana+" y "+altoVentana+" y "+posArriba+" y "+posIzq)*/
+
+    </script> 
+</body> 
+</html>

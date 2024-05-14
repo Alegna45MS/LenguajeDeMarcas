@@ -1,0 +1,13 @@
+#caja1 {
+    position: relative;
+    left: 200px;
+    top: 400px;
+}
+#caja2{
+    position: relative;
+    bottom: 200px;
+}
+#caja3{
+    position: relative;
+    bottom: 200px;
+}

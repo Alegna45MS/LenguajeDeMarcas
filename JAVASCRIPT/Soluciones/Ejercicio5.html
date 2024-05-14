@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="Ejercicio5.css" />
+    <script type="text/javascript" src="Ejercicio5.js"></script>
+    <title>GAME</title>
+</head>
+<body>
+
+    <fieldset id="idContenedor">
+        <div id="idTituloMenu" class="clsCentrar">
+            <span>MENU SELECCIONABLE</span>
+        </div>
+    
+        <br/>
+
+        <div id="idOpcion1" class="clsOpcion">
+            <span>¿EL NÚMERO ES PAR?</span>
+        </div>
+        <div id="idOpcion2" class="clsOpcion">
+            <span>¿EL NÚMERO ES IMPAR?</span>
+        </div>
+        <div id="idOpcion3" class="clsOpcion">
+            <span>¿EL NÚMERO ES PRIMO?</span>
+        </div>
+        <div id="idOpcion4" class="clsOpcion">
+            <span>OBTENER DIVISORES</span>
+        </div>
+        
+        <hr/>
+
+        <div id="idCajaBotones">
+            <div id="idCajaBtnArriba"  class="clsCentrar">
+                <input type="button" id="idBtnArriba" value="" onclick="IrArriba();" />
+            </div>
+            
+            <div id="idCajaBtnAbajo"  class="clsCentrar">
+                <input type="button" id="idBtnAbajo" value="" onclick="IrAbajo();" />
+            </div>
+
+            <div id="idCajaNumero"  class="clsCentrar">
+                <input type="number" id="idNumero" min="1" max="100" />
+            </div>
+            
+            <div id="idCajaBtnCalcular"  class="clsCentrar">
+                <input type="button" value="CALCULAR" onclick="Calcular();" />
+            </div>
+        </div>
+
+        <hr/>
+
+        <div id="idCajaResult">
+            <input type="text" id="idResult" value="" readonly />
+        </div>
+
+    </fieldset>
+</body>
+</html>

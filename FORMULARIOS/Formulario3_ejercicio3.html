@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ejercicio 3</title>
+    </head>
+    <style>
+        body{
+            position: relative;
+            left: 700px;
+        }
+        div{
+            margin: 15px;
+            font-size: 30px;
+        }
+        h1{
+            font-size: 50px;
+            color: blue;
+        }
+        legend,button,li,input,select{
+            font-size: 20px;
+        }
+    </style>
+    <body>
+        <h1>Telefonia movil</h1>
+        <form action="/pagDestinoServidor" method="post">
+            <div>
+                <label for="num">Nombre</label>
+                <input type="text" name="Nombre" id="num" maxlength="150"/>
+            </div>
+            <div>
+                <label for="dom">Domicilio</label>
+                <input type="text" name="domicilio" id="dom"/>
+            </div>
+            <div>
+                <label for="CB">Numero cuenta bancaria</label>
+                <input type="number" name="CB" id="CB" maxlength="20" min="0000000000000000000" max="99999999999999999999"/>
+            </div>
+            <div>
+                <label for="seltarifa">Seleccione su tarifa</label>
+                <select name="tarifa" id="seltarifa">
+                <option>Tarifa joven</option>
+                <option>Tarifa sénior</option>
+                <option>Tarifa Plana Superior</option>
+                </select>
+            </div>
+            <div>
+                <label for="fech">Fecha de nacimiento</label>
+                <input type="date" name="fechaNacimiento" id="fech"/>
+            </div>
+            <div>
+                <legend>¿Notificaciones por SMS?</legend>
+                <ul>
+                    <li>
+                        <label for="Si">Si</label>
+                        <input type="radio" id="Si" name="opcion1" value="Si">
+                    </li>
+                    <li>
+                        <label for="No">No<label>
+                        <input type="radio" id="No" name="opcion1" value="No">
+                    </li>
+                </ul>
+                <legend>Acepto la política de privacidad</legend>
+                <ul>
+                    <li>
+                        <label for="Si">Si</label>
+                        <input type="radio" id="Si" name="opcion2" value="Si" checked>
+                    </li>
+                    <li>
+                        <label for="No">No<label>
+                        <input type="radio" id="No" name="opcion2" value="No">
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </body>
+</html>

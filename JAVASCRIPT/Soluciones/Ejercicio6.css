@@ -1,0 +1,204 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.clsCentrar {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    border: 2px solid rgb(164, 22, 247);
+    border-radius: 25px;
+    background-color:rgb(181, 116, 241);
+}
+
+/* ESTILOS CAJAS Y BOTONES */
+#idBtnJugar {
+    width: 150px;
+    height: auto;
+}
+
+#idNum1 {
+    width: 60%;
+    height: auto;
+}
+
+#idCajaNum2 {
+    background-color: white;
+}
+
+
+
+
+
+
+
+/* CAJA UNO */
+#idCaja1 {
+    display:grid;
+    grid-template-columns: 20% 10% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "numero1    botonjugar    numero2";
+}
+
+#idCajaNum1{
+    text-align: center;
+    border: 2px solid black;
+    grid-area: numero1;
+}
+
+#idCajaBtnJugar{
+    border: 2px solid black;
+    grid-area: botonjugar;
+}
+
+#idCajaNum2{
+    border: 2px solid black;
+    grid-area: numero2;
+}
+
+/* CAJA DOS */
+#idCaja2 {
+    display:grid;
+    grid-template-columns: 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "intentos";
+}
+
+#idIntentos{
+    border: 2px solid black;
+    grid-area: intentos;
+}
+
+/* CAJA 3 */
+#idCaja3 {
+    display:grid;
+    grid-template-columns: repeat(10,5%);
+    grid-template-rows: auto;
+    grid-template-areas: "int01 int02 int03 int04 int05 int06 int07 int08 int09 int10"
+                         "int11 int12 int13 int14 int15 int16 int17 int18 int19 int20";
+}
+
+/* FILA 01 */
+#idInt01{
+    border: 2px solid black;
+    background-color: lightgray;
+    grid-area: int01;
+}
+
+#idInt02{
+    border: 2px solid black;
+    background-color: lightgray;
+    grid-area: int02;
+}
+
+#idInt03{
+    border: 2px solid black;
+    background-color: lightgray;
+    grid-area: int03;
+}
+
+#idInt04{
+    border: 2px solid black;
+    background-color: lightgray;
+    grid-area: int04;
+}
+
+#idInt05{
+    border: 2px solid black;
+    background-color: lightgray;
+    grid-area: int05;
+}
+
+#idInt06{
+    border: 2px solid black;
+    background-color: lightgray;
+    grid-area: int06;
+}
+
+#idInt07{
+    border: 2px solid black;
+    background-color: lightgray;
+    grid-area: int07;
+}
+
+#idInt08{
+    border: 2px solid black;
+    background-color: lightgray;
+    grid-area: int08;
+}
+
+#idInt09{
+    border: 2px solid black;
+    background-color: lightgray;
+    grid-area: int09;
+}
+
+#idInt10{
+    border: 2px solid black;
+    background-color: lightgray;
+    grid-area: int10;
+}
+
+/* FILA 02 */
+#idInt11{
+    border: 2px solid black;
+    grid-area: int11;
+}
+
+#idInt12{
+    border: 2px solid black;
+    grid-area: int12;
+}
+
+#idInt13{
+    border: 2px solid black;
+    grid-area: int13;
+}
+
+#idInt14{
+    border: 2px solid black;
+    grid-area: int14;
+}
+
+div{
+    padding: 10px;
+}
+#idInt15{
+    border: 2px solid black;
+    grid-area: int15;
+}
+
+#idInt16{
+    border: 2px solid black;
+    grid-area: int16;
+}
+
+#idInt17{
+    border: 2px solid black;
+    grid-area: int17;
+}
+
+#idInt18{
+    border: 2px solid black;
+    grid-area: int18;
+}
+
+#idInt19{
+    border: 2px solid black;
+    grid-area: int19;
+}
+
+#idInt20{
+    border: 2px solid black;
+    grid-area: int20;
+}
+
+
+#idCaja1, #idCaja2, #idCaja3 {
+    display:none;
+}

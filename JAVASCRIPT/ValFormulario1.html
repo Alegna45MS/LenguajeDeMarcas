@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 1</title>
+    <script>
+        function validar(){
+            let todo_correct=true
+            let nombre=document.getElementById("nombre").value
+
+            if(nombre.length<2){
+                document.getElementById("error").style.display="inline"
+                todo_correct=false
+            }
+            if(edad<18){
+                document.getElementById("error").style.display="inline"
+                todo_correct=false
+            }
+            if(apellido.length<10){
+                document.getElementById("error").style.display="inline"
+                todo_correct=false
+            }
+        }
+    </script>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        form {
+            width: 450px;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+
+        div {
+            padding: 5px;
+            margin: 10px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input,
+        select {
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        button {
+            color: white;
+            border-color: #0c8f1b;
+            border-radius: 5px;
+            background-color: #0c8f1b;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        #error {
+            display: none;
+            color: rgb(237, 68, 68);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario de registro</h1>
+    <form name="form1" onsubmit='return validar();'>
+        <div>
+            <label for='nombre'>Nombre *</label>
+            <input type='text' name='nombre' id='nombre' />
+        </div>
+        <div>
+            <label for='direccion'>Direccion *</label>
+            <input type='text' name='direccion' id='direccion' />
+        </div>
+        <div>
+            <label for='edad'>Edad *</label>
+            <input type='text' name='edad' id='edad' />
+        </div>
+        <div>
+            <label for='estudios'>Nivel de Estudios *</label>
+            <select id='estudios' name='estudios'>
+            <option value=''>Selecciona</option>
+            <option>Ninguno</option>
+            <option>Primarios</option>
+            <option>Bachiller</option>
+            <option>Grado</option>
+            <option>Master</option>
+            </select>
+        </div>
+        <div>
+            <label>
+                <input type='checkbox' value='SI' id='acepto' />
+                He leido y acepto las condiciones.
+            </label>
+        </div>
+        <div>
+            <span id="error">Algunos campos no son correctos, revísalos</span>
+        </div>
+        <button>Registrarse</button>
+    </form>
+</body>
+
+</html>

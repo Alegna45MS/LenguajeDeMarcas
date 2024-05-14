@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <script>
+            var opcion=1;
+            function pintar(){
+                switch(opcion){
+                    case 1:
+                    document.getElementById("par").style.backgroundColor="red"
+                    document.getElementById("impar").style.backgroundColor="white";
+                    break;
+
+                    case 2:
+                    document.getElementById("impar").style.backgroundColor="red"
+                    document.getElementById("par").style.backgroundColor="white";
+                    document.getElementById("primo").style.backgroundColor="white";
+                    break;
+
+                    case 3:
+                    document.getElementById("primo").style.backgroundColor="red"
+                    document.getElementById("impar").style.backgroundColor="white";
+                    document.getElementById("divisores").style.backgroundColor="white"
+                    break;
+
+                    case 4:
+                    document.getElementById("divisores").style.backgroundColor="red"
+                    document.getElementById("primo").style.backgroundColor="white";
+                    break;
+
+                }
+            }
+            function bajar(){
+                
+                if(opcion<4){
+                    opcion=opcion+1
+                    pintar()
+                }
+
+            }
+            function subir(){
+                if(opcion>1){
+                    opcion=opcion-1
+                    pintar()
+                }
+            }
+            function calcularValor(){
+                var numero=document.getElementById("numero").value
+                if(opcion==1){
+                    if(numero%2==0){
+                        document.getElementById("resultado").value="Es un numero par"
+                    }else{
+                        document.getElementById("resultado").value="No es un numero par"
+                    }
+                }else if(opcion==2){
+                    if(numero%2==1){
+                        document.getElementById("resultado").value="Es un numero impar"
+                    }else{
+                        document.getElementById("resultado").value="No es un numero impar"
+                    }
+                }else if(opcion==3){
+                    if(esPrimo(numero)==true){
+                        document.getElementById("resultado").value="Es un numero primo"
+                    }else{
+                        document.getElementById("resultado").value="No es un numero primo"
+                    }
+                }else if(opcion==4){
+                    var divisores=[]
+                    for(let i=0;i<=numero;i++){
+                        if(numero%i==0){
+                            divisores=divisores+i+" "
+                        }
+                    }
+                    document.getElementById("resultado").value=divisores
+
+                }
+                }
+                function esPrimo(numero) {
+                    for (let i = 2; i < numero; i++) {
+                        if (numero % i === 0) {
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+        </script>
+    </head>
+    <style>
+        *{
+            font-size: 30px;
+            margin: 10px;
+        }
+        #caja{
+            border: 4px solid;
+        }
+        h1{
+            text-align: center;
+        }
+        #par{
+            border:3px solid black;
+            background-color: red;
+        }
+        #impar{
+            border:3px solid black;
+            
+        }
+        #primo{
+            border:3px solid black;
+            
+        }
+        #divisores{
+            border:3px solid black;
+            
+        }
+        #resultado{
+            width: 1800px;
+        }
+    </style>
+    <body>
+        <div id="caja">
+            <h1>MENU SELECCIONABLE</h1>
+            <div id="par">
+                <p>¿El numero es par?</p>
+            </div>
+            <div id="impar">
+                <p>¿El numero es impar?</p>
+            </div>
+            <div id="primo">
+                <p>¿El numero es primo?</p>
+            </div>
+            <div id="divisores">
+                <p>Obtener divisores</p>
+            </div>
+            <button id="arriba" onclick="subir()"><img src="flechaArriba.png"></button>
+            <button id="Abajo" onclick="bajar()"><img src="flechaAbajo.png"></button>
+            <input type="number" id="numero">
+            <button id="btnCalcular" onclick="calcularValor()">Calcular</button>
+            <br>
+            <input type="text" id="resultado" disabled>
+        </div>
+        
+    </body>
+</html>

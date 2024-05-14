@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+        }
+
+        #contenedor {
+            display: grid;
+            gap: 1em;
+            border: 1px solid #A781B9;
+            border-radius: 10px;
+            background-color: #D9D2E9;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <div>
+            <label for="todas">Marcar todas las frutas</label>
+            <input type="checkbox" id="todas" name="todoFruta" onchange="marcarFrutas();">
+            <label for="todas">Marcar todas las verduras</label>
+            <input type="checkbox" id="todas" name="todoVerdura" onchange="marcarVerduras();">
+        </div>
+        <div id="divFrutas">
+            <label for="Naranja" class="morado">Naranja</label>
+            <input type="checkbox" name="fruta" id="Naranja" />
+            <label for="Manzana" class="morado">Manzana</label>
+            <input type="checkbox" name="fruta" id="Manzana" />
+            <label for="Uva" class="morado">Uva</label>
+            <input type="checkbox" name="fruta" id="Uva" />
+            <label for="Calabacin">Calabacín</label>
+            <input type="checkbox" name="verdura" id="Calabacin" />
+            <label for="Puerro">Puerro</label>
+            <input type="checkbox" name="verdura" id="Puerro" />
+        </div>
+    </div>
+    <script>
+        function contarLabel() {
+            let misLbl = miDiv.getElementsByTagName("label");
+            let miDiv = document.getElementById("divFrutas")
+            alert("La div 'divFrutas' tiene " + misLbl.length + " etiquetas label");
+        }
+        function marcarFrutas() {
+            let frutas = document.getElementsByName("fruta");
+            for (let i = 0; i < frutas.length; i++) {
+                if (frutas[i].type == "checkbox") {
+                    frutas[i].checked = true;
+                }
+            }
+            if (document.getElementsByName("todoFruta").checked == false) {
+                for (let i = 0; i < frutas.length; i++) {
+                    if (frutas[i].type == "checkbox") {
+                        frutas[i].checked = false;
+                    }
+                }
+            }
+
+        }
+        function marcarVerduras() {
+            let verduras = document.getElementsByName("verdura");
+            for (let i = 0; i < verduras.length; i++) {
+                if (verduras[i].type == "checkbox") {
+                    verduras[i].checked = true
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

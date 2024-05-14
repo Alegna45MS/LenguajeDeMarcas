@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Buscar empleo</title>
+    </head>
+    <style>
+        body{
+            position: relative;
+            left: 700px;
+        }
+        div{
+            font-size: 30px;
+            margin: 15px;
+        }
+        fieldset{
+            border: solid 3px rgb(255, 0, 0);
+            margin: 20px;
+            width: 800px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        legend,button,li,input{
+            font-size: 30px;
+            
+        }
+    </style>
+    <body>
+        <h1>Buscar empleo</h1>
+        <form action="/pagDestinoServidor" method="post"></form>
+    </body>
+    <fieldset>
+    <div>
+        <label for="num">Nombre</label>
+        <input type="text" name="Nombre" id="num" maxlength="10"/>
+    </div>
+    <div>
+        <label for="apell">Apellidos</label>
+        <input type="text" name="Apellido" id="num" maxlength="10"/>
+    </div>
+    <div>
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="em"/>
+    </div>
+    <div>
+        <label for="pass">Password</label>
+        <input type="password" name="Contraseña" id="pass" maxlength="20"/>
+    </div>
+    <div>
+        <label for="ed">Edad</label>
+        <input type="number" name="edad" id="ed" min="17"/>
+    </div>
+    <div>
+        <label for="foto">Subir foto</label>
+        <input type="file" name="subirFoto" id="foto"/>
+    </div>
+    </fieldset>
+    <fieldset>
+        <legend>Trabajo a jornada parcial o completa</legend>
+        <ul>
+            <li>
+                <label for="parcial">Parcial</label>
+                <input type="checkbox" id="parcial" name="parcial" value="parcial">
+            </li>
+            <li>
+                <label for="completa">Completa</label>
+                <input type="checkbox" id="completa" name="completa" value="completa">
+            </li>
+        </ul>
+        <legend>Trabajo en jornada intensiva o partida</legend>
+        <ul>
+            <li>
+                <label for="inten">Intensiva</label>
+                <input type="checkbox" id="inten" name="intensiva" value="intensiva">
+            </li>
+            <li>
+                <label for="part">Partida</label>
+                <input type="checkbox" id="part" name="partida" value="partida">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>¿Tiene carnet de manipulador de alimentos?</legend>
+        <ul>
+            <li>
+                <label for="Si">Si</label>
+                <input type="radio" id="Si" name="opcion1" value="Si">
+            </li>
+            <li>
+                <label for="No">No<label>
+                <input type="radio" id="No" name="opcion1" value="No">
+            </li>
+        </ul>
+        <legend>¿Tiene carnet de conducir?</legend>
+        <ul>
+            <li>
+                <label for="Sis">Si</label>
+                <input type="radio" id="Sis" name="opcion2" value="Si">
+            </li>
+            <li>
+                <label for="Nom">No<label>
+                <input type="radio" id="Nos" name="opcion2" value="No">
+            </li>
+        </ul>
+
+    </fieldset>
+    <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </div>
+        </form>
+</html>

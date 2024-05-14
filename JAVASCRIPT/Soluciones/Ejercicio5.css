@@ -1,0 +1,99 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.clsCentrar {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.clsOpcion {
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid white;
+    width: 600px;
+    height: auto;    
+}
+
+hr {
+    border: 5px solid red;
+}
+
+#idOpcion1 {
+    border-color: black;
+    background-color: #F43B2F;
+}
+
+#idCajaBotones {
+    display:grid;
+    grid-template-columns: 20% 20% 20% 40%;
+    grid-template-rows: auto;
+    grid-template-areas: "btnArriba    btnAbajo    Numero    btnCalcular";
+}
+
+#idCajaBtnArriba{
+    grid-area: btnArriba;
+}
+
+
+
+#idCajaBtnAbajo{
+    grid-area: btnAbajo;
+}
+
+#idCajaNumero{
+    grid-area: Numero;
+}
+
+#idCajaBtnCalcular{
+    grid-area: btnCalcular;
+}
+
+#idBtnArriba {
+    background-image: url('img/UP.PNG');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    background-position: center;
+}
+
+#idBtnAbajo {
+    background-image: url('img/DOWN.PNG');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    background-position: center;
+}
+
+#idTituloMenu {
+    text-align: center;
+    border: 2px solid black;
+    width: 600px;
+    height: auto;
+}
+
+#idContenedor {
+    width: 600px;
+    height: auto;
+}
+
+#idCajaResult {
+    text-align: center;
+    border: 2px solid black;
+    width: 600px;
+    height: auto;
+}
+
+
+
+
+#idResult {
+    font-size: 30px;
+    width: 90%;
+    height: auto;
+}

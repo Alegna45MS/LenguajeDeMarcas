@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <script>
+            function validar(){
+                let todo_correct=true
+                let nombre=document.getElementById("num").value
+                let contrasenna=document.getElementById("pass").value
+                let edad=document.getElementById("edad").value
+
+                if(nombre.length<2){
+                    todo_correct=false
+                    document.getElementById("error").style.display="inline"
+                }
+                if(contrasenna.length<8){
+                    todo_correct=false
+                    document.getElementById("error").style.display="inline"
+                }
+                if(edad<50){
+                    todo_correct=false
+                    document.getElementById("error").style.display="inline"
+                }
+                return todo_correct
+            }
+        </script>
+        <style>
+            *{
+                margin: 5px;
+            }
+            #error{
+                display:none;
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Dar de alta</h1>
+        <form action="/pagDestinoServidor" method="get" onsubmit="return validar()">
+            <div>
+                <label for="num">Nombre</label>
+                <input type="text" name="Nombre" id="num" maxlength="10"/>
+            </div>
+            <div>
+                <label for="pass">Password</label>
+                <input type="password" name="password" id="pass"/>
+            </div>
+            <div>
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad">
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+            </div>
+
+        <div id="error"><span>Hay algunos requisistos que no se cumplen,revisa el formulario</span></div>
+        </form>
+    </body>
+</html>

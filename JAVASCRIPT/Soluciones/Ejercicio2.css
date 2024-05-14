@@ -1,0 +1,17 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h1 {
+    text-decoration: 5px solid underline black;
+}
+
+#idTexto1, #idTexto2 {
+    background-color: orange;
+    text-align: center;
+}
+div{
+    padding: 10px;
+}

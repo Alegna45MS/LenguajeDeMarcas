@@ -1,0 +1,53 @@
+body{
+    position:relative;
+    background-image:url(img/estrellas.jpg);
+    font-family: sans-serif;
+    width: 850px;
+    left: 500px;
+    
+
+}
+h1{
+    color: #ffffce;
+    text-align: center;
+    padding: 3%;
+    font-size: 300%;
+    
+}
+h2,h3{
+    color: white;
+}
+
+#escorpio{
+    background-color:#23e0b3;
+    border:3px solid;
+    position: relative;
+    left: 35%;
+    bottom:50%;
+
+}
+#horoscopo ul{
+    border:1px solid;
+    background-color: #ef4ba8;
+    color: white;
+    width: 30%;
+    height: 80%;
+    
+    
+}
+#libra{
+    background-color: #6ae7fb;
+    border:1px solid;
+    width: 50%;
+    height: 80%;
+}
+#sagitario{
+    background-color: #fc827e;
+    border:3px solid;
+    width: 50%;
+    height: 80%;
+    position: relative;
+    left: 50%;
+    bottom: 1000%;
+}
+

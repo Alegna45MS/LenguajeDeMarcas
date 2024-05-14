@@ -1,0 +1,31 @@
+body{
+    width: 700px;
+    position: absolute;
+    left: 30%;
+}
+li{
+    list-style: none;
+}
+span{
+    color: red;
+}
+button{
+    position: relative;
+    left: 200px;
+
+}
+span{
+    font-size: 10px;
+}
+div{
+    margin: 15px;
+}
+input{
+    
+}
+button{
+    border-radius: 5px;
+}
+fieldset{
+    border-radius: 10px;
+}

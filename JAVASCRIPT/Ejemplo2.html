@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link id="estilo" rel="stylesheet" href="estilos1"/>
+    <script>
+        function cambiarImagen(){
+            var imagen=document.getElementById("img")
+            imagen.setAttribute("src","gato2.jpeg")
+            imagenactual=imagen.getAttribute("src")
+            if(imagenactual=="gato.jpeg"){
+                imagen.setAttribute("src","gato.jpeg")
+            }else{
+                imagen.setAttribute("src","gato.jpeg")
+            }
+        }
+    </script>
+   
+</head>
+<body>
+    <img id="img" src="img/gato.jpeg" alt="gato"/>
+    <button id="btnIntercambiar" onclick="cambiarImagen()">cambiar</button>
+</body> 
+</html>

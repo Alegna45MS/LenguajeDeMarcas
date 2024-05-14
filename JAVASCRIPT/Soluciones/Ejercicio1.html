@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="Ejercicio1.css" />
+    <script type="text/javascript" src="Ejercicio1.js"></script>
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <!-- Introducción a JavaScript -->
+    <!-- Selección de elementos -->
+    <h1> EMPEZANDO CON JAVASCRIPT </h1>
+    <div id="idDivTexto">
+        <span id="idSpanTexto">TEXTO DEL DIV</span>
+    </div>
+
+    <br/>
+    
+    <hr/>
+    <label for="idTexto">Introduce un texto aqui</label>
+    <input type="text" id="idTexto" maxlength="20" />
+    <hr/>
+    <label for="idColorFondo">Selecciona color de fondo</label>
+    <input type="color" id="idColorFondo" />
+
+    <label for="idColorBorde">Selecciona color del borde</label>
+    <input type="color" id="idColorBorde" />
+
+    <label for="idColorTexto">Selecciona color del texto</label>
+    <input type="color" id="idColorTexto" />
+    <hr/>
+
+    <br/>
+    <input type="button" value="Cambiar Texto" onclick="CambiarTexto();" />
+    <input type="button" value="Cambiar color fondo" onclick="CambiarColorFondo();" />
+    <input type="button" value="Cambiar color borde" onclick="CambiarColorBorde();" />
+    <input type="button" value="Cambiar color texto" onclick="CambiarColorTexto();" />
+
+</body>
+</html>

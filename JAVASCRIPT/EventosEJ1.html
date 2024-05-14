@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+ <html> 
+<head>
+    <script>
+        function cambiarTexto(){
+            var text=document.getElementById("caja");
+            var almacen=document.getElementById("texto");
+            textoActual=almacen.value;
+            text.innerHTML=textoActual;   
+        }
+        function cambiarFondo(){
+            var nuevoColor=document.getElementById("cambiarFondo").value;
+            document.getElementById("caja").style.backgroundColor=nuevoColor;
+            
+        }
+        function cambiarBorde(){
+            var nuevoborde=document.getElementById("cambiarBorde").value;
+            document.getElementById("caja").style.borderColor=nuevoborde;
+        }
+        function cambiarColorTexto(){
+            var Colortexto=document.getElementById("caja");
+            var almacen=document.getElementById("cambiarColorText")
+            Colortexto.style.color=almacen.value;
+        }
+
+    </script>
+</head>
+<style>
+body{
+    font-size: 30px;
+}
+h1{
+    text-align: center;
+}
+#caja{
+    border: 5px solid;
+}
+#caja{
+    padding-left: 50px;
+    text-align: center;
+    margin-top: 10px;
+    border: 5px solid;
+}
+#IntrodTexto{
+    margin-top:20px;
+    text-align: center;
+}
+button{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(132, 200, 230);
+    font-size: 15px;
+
+    
+}
+</style>
+<body>
+    <h1>EMPEZANDO CON JAVASCRIPT</h1>
+    <div id="caja"><strong>Texto del div</strong></div>
+    <hr>
+    <div id="IntrodTexto">
+        <label for="texto"><strong>Introduce un texto aquí</strong></label>
+        <input type="text" id="texto" maxlength="20">
+    </div>
+    <hr>
+    <div id="opciones">
+    <label for="cambiarFondo"><strong>Selecciona color de fondo</strong></label>
+    <input type="color" id="cambiarFondo">
+
+    <label for="cambiarBorde"><strong>Selecciona color del borde</strong></label>
+    <input type="color" id="cambiarBorde">
+
+    <label for="cambiarColorText"><strong>Selecciona color del texto</strong></label>
+    <input type="color" id="cambiarColorText">
+    </div>
+    <hr>
+    <button id="btnCambiarTexto" onclick="cambiarTexto()"><strong>Cambiar texto</strong></button>
+    <button id="btnCambiarFondo" onclick="cambiarFondo()"><strong>Cambiar color fondo</strong></button>
+    <button id="btnCambiarBorde" onclick="cambiarBorde()"><strong>Cambiar color borde</strong></button>
+    <button id="btncambiarTextoColor" onclick="cambiarColorTexto()"><strong>Cambiar color texto</strong></button>
+
+
+</body> 
+</html>

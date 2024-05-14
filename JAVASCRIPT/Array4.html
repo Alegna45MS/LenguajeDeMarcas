@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+ <html> 
+    <head>
+        <title>Ejercicio4</title> 
+    </head>
+    <body>
+        <script type="text/Javascript">
+            function generarNumerosAleatorios(cantidad, rangoInicio, rangoFin) {
+                const numerosAleatorios = [];
+                for (let i = 0; i < cantidad; i++) {
+                    const numeroAleatorio = Math.floor(Math.random() * (rangoFin - rangoInicio + 1)) + rangoInicio;
+                    numerosAleatorios.push(numeroAleatorio);
+                }
+                return numerosAleatorios;
+                }
+                const numerosAleatorios=generarNumerosAleatorios(10,1,100)
+                const numerosOrdenados=numerosAleatorios.sort()
+                document.write(numerosOrdenados)
+       </script>
+    </body> 
+</html>

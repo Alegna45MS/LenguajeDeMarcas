@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formulario de pago</title>
+        <link rel="stylesheet" href="Formulario4_style.css" />
+    </head>
+    <body>
+        <fieldset>
+        <h1>FORMULARIO DE PAGO</h1>
+        <form action="/pagoGoya" method="post">
+            <p><span>(los campos obligatorios se han marcado con *)</span></p>
+            <fieldset>
+                <legend>Informacion de contacto</legend>
+                <fieldset>
+                    <legend>Profesion</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" id="prof" name="Profesion">
+                            <label for="prof">Profesor/a</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="Estud" name="Profesion">
+                            <label for="Estud">Estudiante</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="Otro" name="Profesion">
+                            <label for="prof">Profesor/a</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div>
+                    <label for="nom">Nombre<span>*</span></label>
+                    <input type="text" name="Nombre" id="nom"/>
+                </div>
+                <div>
+                    <label for="mail">Correo<span>*</span></label>
+                    <input type="email" id="mail" name="Correo"/>
+                </div>
+                <div>
+                    <label for="tlf">Numero de Telefono<span>*</span></label>
+                    <input type="tel" name="telefono" id="tlf" pattern="[0-9]{3} [0-9]{2} [0-9]{2} [0-9]{2}"/>
+                </div>
+                <div>
+                    <label for="contr">Contraseña<span>*</span></label>
+                    <input type="password" name="Contraseña" id="contr"/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informacion de pago</legend>
+                <div>
+                    <label for="tarj">Tipo de tarjeta</label>
+                    <select name="tipoTarjeta" id="tarj">
+                        <option>Visa</option>
+                        <option>MasterCard</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="numTar">Numero de tarjeta<span>*</span></label>
+                    <input type="number" name="numeroTrajeta" id="numTar" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}"/>
+                </div>
+                <div>
+                    <label for="fechCad">Fecha de caducidad<span>*</span></label>
+                    <input type="date" name="FechaCaducidad" id="fechCad" min="2023-12-31"/>
+                </div>
+                <div>
+                    <label for="metodo">Metodo de pago preferido</label>
+                    <select name="metodoPago" size="3" multiple="multiple" >
+                        <option>Tarjeta de credito</option>
+                        <option>Paypal</option>
+                        <option>Bizum</option>
+                        <option>Transferencia</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Politica de privacidad</legend>
+                <input type="checkbox" id="polit" name="politica">
+                <label for="polit">He leido y acepto el Condiciones Generales de contrataticon y la Politica de privacidad</label>
+                <br>
+                <input type="checkbox" id="newslet" name="newsletters">
+                <label for="newslet">NO quiero recibir newsletters ni comunicaciones comerciales de GOYAZON</label>
+            </fieldset>
+            <button type="submit">VALIDAR EL PAGO</button>
+            <button type="reset">CANCELAR</button>
+        </form>
+        </fieldset>
+    </body>
+</html>

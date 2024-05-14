@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+ <html> 
+    <head>
+        <title>Ejercicio6</title> 
+    </head>
+    <body>
+        <script type="text/Javascript">
+            var inputNumero = prompt("Por favor, introduce un número:");
+
+            // Verificar si se ha ingresado un valor
+            if (inputNumero !== null && inputNumero !== "") {
+            // Convertir la entrada a un número
+             var numero = parseFloat(inputNumero);
+
+             // Verificar si la entrada es un número
+            if (!isNaN(numero)) {
+                // Verificar si el número es par o impar
+                if (numero % 2 === 0) {
+                    alert("El número " + numero + " es PAR.");
+                } else {
+                    alert("El número " + numero + " es IMPAR.");
+                }
+                } else {
+                    alert("Por favor, introduce un valor numérico válido.");
+                }
+            } else {
+                 alert("Por favor, introduce un valor.");
+            }
+       </script>
+    </body> 
+</html>

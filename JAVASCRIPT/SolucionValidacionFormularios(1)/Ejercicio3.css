@@ -1,0 +1,55 @@
+body{padding:100px;}
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+h1{
+    color: #086a4e;
+    margin-bottom: 15px;
+}
+.container{
+    width:100%;
+    max-width:500px;
+    padding:10px;
+    border:1px solid #086a4e;
+    border-radius:10px;
+    margin:auto;
+    background-color:#f6f8fb;
+}
+
+.formulario label{
+    display:block;
+    font-weight:bold;
+}
+
+.formulario input,.formulario select,.formulario textarea{
+    padding:5px;
+    width:100%;
+    margin:16px 0;
+}
+
+.formulario textarea{
+    resize:none;
+    height:120px;
+}
+
+#solicitudInput{
+    border:2px solid #ff0000;
+    display:none;
+}
+
+#solicitudLabel{
+    display:none;
+}
+button{
+    height: 25px;
+    padding: 5px;
+    background-color: #086a4e;
+    color: #f6f8fb;
+    border-color: #086a4e;
+    width: 100%;
+    border-radius: 5px;
+}

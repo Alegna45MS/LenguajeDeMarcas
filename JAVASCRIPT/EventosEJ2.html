@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script>
+            function LimpiarText1(){
+                var texto1=document.getElementById("texto1");
+                texto1.value=" ";
+            }
+            function LimpiarText2(){
+                var texto2=document.getElementById("texto2");
+                texto2.value=" ";
+            }
+            function CopiarATexto1(){
+                var textorigen=document.getElementById("texto1").value;
+                document.getElementById("texto2").value=textorigen;
+            }
+            function CopiarATexto2(){
+                var textorigen=document.getElementById("texto2").value;
+                document.getElementById("texto1").value=textorigen;
+            }
+        </script>
+    </head>
+    <style>
+        *{
+            font-size: 50px;
+            margin:10px;
+        }
+        input{
+            background-color: orange;
+        }
+    </style>
+    <body>
+        <h1>EJERCICIO DE CONTROLES</h1>
+        <div id="text1">
+            <label for="texto1"><strong>Texto 1</strong></label>
+            <input type="text" id="texto1" maxlength="20">
+        </div>
+        <button id="btnLimpiar" onclick="LimpiarText1()"><strong>Limpiar texto 1</strong></button>
+        <button id="btnCopiarTexto" onclick="CopiarATexto1()"><strong>Copiar a texto 2</strong></button>
+        <div id="text2">
+            <label for="texto2"><strong>Texto 2</strong></label>
+            <input type="text" id="texto2" maxlength="20">
+        </div>
+        <button id="btnLimpiar" onclick="LimpiarText2()"><strong>Limpiar texto 2</strong></button>
+        <button id="btnCopiarTexto" onclick="CopiarATexto2()"><strong>Copiar a texto 1</strong></button>
+    </body>
+</html>

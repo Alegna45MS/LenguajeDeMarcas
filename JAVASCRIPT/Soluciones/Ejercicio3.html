@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="ejercicio3.css" />
+    <script type="text/javascript" src="ejercicio3.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>VALOR EN CONTROLES</h1>
+<div>
+    <label for="idTexto">Caja texto:</label>
+    <input type="text" id="idTexto" maxlength="15" class="clsFondo" />
+   
+</div>
+<div>
+    <label for="idNumero">Caja número:</label>
+    <input type="number" id="idNumero" min="0" max="100" class="clsFondo"/>
+</div>
+<div>
+
+    <label for="idPassword">Caja password:</label>
+    <input type="password" id="idPassword" class="clsFondo"/>
+</div>
+<div>
+
+    <label for="idFecha">Caja fecha:</label>
+    <input type="date" id="idFecha" class="clsFondo" />
+</div>
+<div>
+    <label for="idHora">Caja hora:</label>
+    <input type="time" id="idHora" class="clsFondo" />
+</div>
+<div>
+
+    <label for="idRadio">Caja radio:</label>
+    <input type="radio" id="idRadio" class="clsFondo" />
+</div>
+<div>
+
+    <label for="idCheckbox">Caja check:</label>
+    <input type="checkbox" id="idCheckbox" class="clsFondo"/>
+</div>
+<div>
+    <label for="idSelect">Caja check:</label>
+    <select id="idSelect" class="clsFondo">
+        <option id="idSelectOpt1" selected>Opción 1</option>
+        <option id="idSelectOpt2">Opción 2</option>
+        <option id="idSelectOpt3">Opción 3</option>
+        <option id="idSelectOpt4">Opción 4</option>
+        <option id="idSelectOpt5">Opción 5</option>
+    </select>
+
+</div>
+<div>
+    <input type="button" value="Capturar valores" onclick="CapturarValores();" />
+</div>
+
+</body>
+</html>

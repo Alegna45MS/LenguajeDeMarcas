@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <link rel="stylesheet" href="ejercicio3.css">
+    </head>
+    <body>
+    
+    <div class="container">
+        <h1>Solicitud de información</h1>
+    <form action="#" class="formulario" onsubmit="return validar()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" id="nombre">
+        
+        <label for="email">Email:</label>
+        <input type="text" name="email" placeholder="Escribe tu email" id="email">
+        
+        <label for="asunto" id="test">Asunto:</label>            
+        <select name="asunto" id="asunto" onchange="mostrarSolicitud()">
+            <option value="info">Pedir información</option>
+            <option value="estado">Estado de una solicitud</option>
+            <option value="otro">Otro motivo</option>
+        </select>
+        
+        <label for="solicitudInput" id="solicitudLabel">Nº Solicitud:</label>
+        <input type="text" name="solicitud" placeholder="Escribe el número de solicitud" id="solicitudInput">
+        
+        <label for="mensaje">Escribe un mensaje:</label>
+        <textarea name="mensaje" id="mensaje"></textarea>  
+        <button>Enviar</button>   
+    </form>
+                
+        
+    </div>   
+
+   
+    <script src="ejercicio3.js"></script>
+    </body>
+</html>
