@@ -1,0 +1,71 @@
+body{
+    background-color: #de8888;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 5em;
+    background-color: white;
+    padding: 0.2%;
+    padding-right: 15%;
+}
+
+h1 span{
+    color: red;
+    background-color: white;
+}
+#menuSup{
+    list-style:none;
+    margin: 0;
+    padding-left: 25%;
+    border: 1px;
+    
+}
+#menuSup li{
+    border:1px solid#a12828;
+    margin: 10px;;
+    padding:2px;
+    float:left;
+    
+    
+}
+#menuSup li a{
+    display:block;
+    width:150px;
+    padding:4px 2px;
+    text-decoration:none;
+    text-align:center;
+    font-size:14px;
+    color:#FFFFFF;
+    background-color:#d65757;
+    
+}
+#menuSup li a:hover {
+    color:#d65757;
+    background-color:#FFFFFF;
+ }
+
+#ciudad li{
+    font-size:30px ;
+ }
+ h2{
+    color: #7a089a;
+ }
+ h3{
+    color:rgb(255, 0, 0)
+ }
+ span{
+    color:#9a0808
+ }
+
+.table_hotel thead,
+.table_viaje thead{
+    font-weight: bold;
+    background: #fa2828;
+ }
+ .table_hotel tbody,
+ .table_viaje tbody{
+    background-color: #f9f9f9
+ }
+
